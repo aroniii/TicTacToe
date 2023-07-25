@@ -1,0 +1,119 @@
+body{
+    background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FFFFFF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FFFFFF' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+    background-position-y: center;
+    color: dimgray;
+    font-family: serif;
+    text-align: center;
+}
+
+.block{
+    color: red;
+
+}
+
+h1{
+    font-size: 2rem;
+}
+
+#container{
+    margin: 5% auto;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10%;
+    color: rgb(255, 255, 255);
+}
+
+.box{
+    display: inline-block;
+    border: 1px solid rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+span{
+    position: absolute;
+    font-size: 75px;
+    font-family: sans-serif;
+    text-align: center;
+    height: 75px;
+    width: 75px;
+    padding: 0;
+    margin: 5px;
+    margin-left: -35px;
+}
+
+.top{
+    border-top: none;
+    color: red;
+}
+
+.bottom{
+    color: red;
+
+    border-bottom: none;
+}
+
+.left{
+    color: red;
+
+    border-left: none;
+}
+
+.right{
+    color: red;
+
+    border-right: none;
+}
+
+.alert{
+    height: 75px;
+    width: 125px;
+    display: inline-block;
+    background: ghostwhite;
+    position: relative;
+    z-index: 10;
+    margin-top: -50%;
+    border-radius: 20px;
+    box-shadow: 0 0 75px 2px dimgray;
+    animation: larger 0.5s;
+    animation-fill-mode: forwards;
+    box-sizing: content-box;
+    padding: 30px;
+    bottom: 50px;
+    top: 0;
+}
+
+button{
+    background: dimgray;
+    border-radius: 2px;
+    color: ghostwhite;
+    border: none;
+    outline: none;
+}
+
+button:focus{
+    background: silver;
+}
+
+.activeBox{
+    background: silver;
+}
+
+@keyframes larger{
+    from{
+        height: 75px;
+        width: 125px;
+    }
+
+    to{
+        height: 100px;
+        width: 250px;
+    }
+
+}
